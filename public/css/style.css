@@ -3,3 +3,30 @@ body{
     padding: 0;
     width: 100%;
 }
+
+.partners{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners h5, h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_partners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.logo_partners img{
+    display: flex;
+    border: solid 1px ;
+    border-radius: 7px;
+}
+
