@@ -17,7 +17,7 @@ body{
     padding-right: 40px;
     background-image: ;
     align-items: flex-end;
-    background-image: url(./../src/img/banner-overlay-img.png),linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5));
+    background-image: url(./../src/img/banner-overlay-img.png),linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
 }
 .cyberright{
     width: 50%;
