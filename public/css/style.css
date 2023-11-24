@@ -4,3 +4,77 @@ body{
     width: 100%;
 }
 /* ------------------Debut Cyber Security------------- */
+.cyber_security{
+    width: 100%;
+    display: flex;
+}
+.cyberleft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+    padding-right: 40px;
+    background-image: ;
+    align-items: flex-end;
+    background-image: url(./../src/img/banner-overlay-img.png),linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5));
+}
+.cyberright{
+    width: 50%;
+}
+.imgcyberbg{
+    width: 100%;
+    height: 700px;
+    background-image: url(./../src/img/service-right-bg-img.png);
+    background-size: cover;
+}
+.cyberleft>p{
+    text-align: start;
+}
+.cyberpercent{
+    width: 60%;
+    display: flex;
+    align-items: flex-end;    
+}
+
+.cyberleft>p:nth-child(1){
+    color: #2CA9D4ff;
+    padding-right: 200px;   /* !!*/
+}
+.titlecyber{
+    color: white;
+    font-size: 50px;
+}
+.skills {
+    width: 65%;
+    display: flex ;
+    justify-content: space-between;
+    padding: 20px;
+}
+  
+.skill>:nth-child(1) {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    border-radius: 50%;
+    border: 4px #2CA9D4ff solid;
+}
+.circle{
+    /* font-size: 40px; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill>p{
+    color: white;
+    font-size: large;
+    
+}
+.textcybercenter{
+    color: #2CA9D4ff;
+    padding-right: 55px;
+}
