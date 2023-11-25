@@ -7,15 +7,19 @@ body{
 .cyber_security{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: ;
 }
 .cyberleft{
-    width: 50%;
+    padding-top: 55px;
+    padding-bottom: 31px;
+    height: max-content;
+    width: 47%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background-size: cover;
-    justify-content: center;
     padding-right: 40px;
-    background-image: ;
     align-items: flex-end;
     background-image: url(./../src/img/banner-overlay-img.png),linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
 }
@@ -23,6 +27,9 @@ body{
     width: 50%;
 }
 .imgcyberbg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 100%;
     height: 700px;
     background-image: url(./../src/img/service-right-bg-img.png);
@@ -77,4 +84,86 @@ body{
 .textcybercenter{
     color: #2CA9D4ff;
     padding-right: 55px;
+}
+.textimgcyber{
+    background-color: #2CA9D4ff;
+    width: 40%;
+    height: max-content;
+    padding: 60px;
+    color: white;
+    padding-right: 0;
+    border-top-left-radius: 30px;
+}
+.textimgcyber>:nth-child(2){
+    font-size: x-large;
+}
+.textimgcyber>:nth-child(3){
+    font-size: large;
+}
+.textimgcyber>a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+
+/* -------------------Responsive---------------------- */
+@media (min-width:768px) and (max-width:1024px){
+    .cyberleft{ 
+        padding: 0px;
+        padding-left: 20px;
+        padding-top: 13px;
+    }
+    .skills{
+        width: 100%;
+        padding: 0px;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .textimgcyber{
+        width: 80%;
+    }
+}
+
+@media (min-width:425px) and (max-width:768px){
+    .cyberleft{
+        /* padding-left: 60px; */
+        width: 100%;
+    }
+    .textcybercenter{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .titlecyber{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .skills{
+        width: 100%;
+        padding-left: 0px;
+        justify-content: center;
+    }
+    .cyberright{
+        width: 100%;
+    }
+}
+@media (min-width:320px) and (max-width:425px){
+    .textimgcyber{
+        width: 100%;
+    }
+    .skills{
+        justify-content: flex-end;
+    }
+    .cyberleft{
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .cyberleft{
+        width: 100%;
+    }
+    .cyberright{
+        width: 100%;
+    }
 }
