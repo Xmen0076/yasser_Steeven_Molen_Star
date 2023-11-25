@@ -7,3 +7,77 @@ body{
     padding: 0;
     width: 100%;
 }
+
+
+.what_we_do{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+    flex-direction: column;
+}
+
+
+.p_what_we_do{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid black;
+    background-color: ;
+}
+
+.img_what_we_do{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    border: solid black;
+}
+
+.img_camera{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    border: solid black;
+    
+
+}
+
+.img_folder{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    border: solid black;
+}
+
+.img_end{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    border: solid black;
+}
+
+.img_finger{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    border: solid black;
+
+}
