@@ -7,9 +7,28 @@ body{
 
 footer{
     width: 100%;
+    height: 250px;
+    /* display: flex; */
+    background-image: url(./../src/img/banner-overlay-img.webp);
+    background-size: cover;
 }
-
-
+.footercolumns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+}
 .copyright{
     width: 100%;
+}
+.column4>form{
+    border: 5px red solid;
+}
+.copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
