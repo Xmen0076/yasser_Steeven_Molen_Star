@@ -5,3 +5,141 @@ body{
 }
 
 /* ----------------------start of the statistics section------------------- */
+@font-face {
+    font-family: "OswalRegular";
+    src: url(./../assets/fonts/OswaldRegular.ttf);
+}
+.statistics{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(./../src/img/banner-overlay-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.statisticsleft{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.statisticsright{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.statisticsdata{
+    display: flex;
+    /* flex-direction: column; */   /*responsive*/
+}
+.statisticscolumn{
+    width: 100%;
+    padding-top: 100px;
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.statisticsblock{
+    width: 60%;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #1D4791ff ;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.statisticsblock>img{
+    width: 40%;
+    display: block;
+}
+.statisticsblock>p:nth-child(2){
+    color: white;
+    font-size: x-large;
+    margin: 15%;
+}
+.statisticsblock>p:nth-child(3){
+    margin: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    color: rgb(126, 144, 237);
+}
+.statisticsright>p:nth-child(1){
+    color: rgb(79, 134, 230);
+}
+.statisticsright>p:nth-child(2){
+    color: white;
+    font-size: xx-large;
+}
+.statisticsright>p:nth-child(3){
+    color: #1D4791ff;
+}
+.statisticsright>button{
+    border:none;
+    color: white;
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #0ED1ECff;
+}
+/* ------------------Responsive------------------ */
+
+@media (min-width: 320px) and (max-width: 768px){
+    .statisticsright>p:nth-child(1){
+        color: rgb(79, 134, 230);
+        font-size: small;
+    }
+    .statisticsright>p:nth-child(2){
+        color: white;
+        font-size: x-large;
+    }
+    .statisticsright>p:nth-child(3){
+        color: #1D4791ff;
+        font-size: small;
+    }
+    .statisticsright>button{
+        border:none;
+        color: white;
+        width: 50%;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #0ED1ECff;
+    }
+}
+@media (min-width: 320px) and (max-width: 700px){
+    .statisticsright{
+        width: 100%;
+        padding-left: 30px;
+        align-items: center;
+        padding-right: 20px;
+    }
+    .statisticsleft{
+        width: 100%;
+    }
+    .statistics{
+        flex-wrap: wrap-reverse;
+    }
+    .statisticsright>p:nth-child(1){
+        color: rgb(79, 134, 230);
+        font-size: medium;
+    }
+    .statisticsright>p:nth-child(2){
+        color: white;
+        font-size: xx-large;
+    }
+    .statisticsright>p:nth-child(3){
+        color: #1D4791ff;
+        font-size: medium;
+    }
+}
