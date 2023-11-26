@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
 
+@font-face {
+    font-family: Myfont;
+    src: url(./public/src/fonts/RobotoMedium.ttf);
+}
+
+
+
 @font-face{
     font-family: RobotomMedium; src: url(./../src/fonts/RobotoMedium.ttf);
 }
@@ -853,4 +860,82 @@ padding-top: 20px;
         color: #1D4791ff;
         font-size: medium;
     }
+}
+
+.our_news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    font-family: Myfont;
+    background-image: url(/public/src/img/dots2-img.png);
+    background-size: 15%;
+    background-position-x: left;
+    background-position-y: 70px;
+    background-color: #0A1650ff; 
+    background-repeat: no-repeat;
+    padding-bottom: 40vh;
+
+}
+
+.img_our_news {
+    display: flex;
+    height: 35vh;
+    gap: 10px;
+    
+}
+
+
+.text_our_news h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    font-family: Myfont;
+    
+
+}
+
+.text_our_news h6{
+
+    display: flex;
+    color: rgb(0, 153, 255);
+    margin: 0;
+    justify-content: center;
+    font-size: large;
+    
+}
+
+
+.card {
+    display: inline-block;
+    position: relative;
+
+}
+.card .textimg {
+    width: 10vw;
+    font-size: 75%;
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    font-family: Georgia;
+    margin-left: 5%;
+    left: 0;
+    right: 1;
+    top: 60%;
+    color: white;
+    width: 90%;
+}
+
+.card .textimg p{
+    font-size: 80%;
+    color: rgba(255, 255, 255, 0.574);
+
+}
+.card>img{
+    width: 400px;
+    height: 400px;
 }
