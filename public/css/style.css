@@ -2,12 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
 
 @font-face {
-    font-family: MyFont;
+    font-family: Myfont;
     src: url(./public/src/fonts/RobotoMedium.ttf);
-    src: url(./public/src/fonts/OswaldMedium.ttf);
-    src: url(./public/src/fonts/OswaldRegular.ttf);
-    src: url(./public/src/fonts/RobotoBold.ttf);
-    src: url(./public/src/fonts/RobotoRegular.ttf);
 }
 
 
@@ -25,6 +21,7 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100%;
+    font-family: Myfont;
     background-image: url(/public/src/img/dots2-img.png);
     background-size: 15%;
     background-position-x: left;
@@ -49,15 +46,19 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: RobotomMedium;
+    font-size: xx-large;
+    font-family: Myfont;
     
 
 }
 
 .text_our_news h6{
+
     display: flex;
     color: rgb(0, 153, 255);
     margin: 0;
+    justify-content: center;
+    font-size: large;
     
 }
 
@@ -87,7 +88,10 @@ body{
     color: rgba(255, 255, 255, 0.574);
 
 }
-
+.card>img{
+    width: 400px;
+    height: 400px;
+}
 
 
 
