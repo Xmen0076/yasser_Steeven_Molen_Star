@@ -240,3 +240,113 @@ img:hover{
     transition: transform .8s;
 
 }
+    height: 100%;
+}
+
+/* ----------------------who are we------------------- */
+@font-face{
+    font-family: RobotomMedium; src: url(./../src/fonts/RobotoMedium.ttf);
+}
+
+.who_we_are{
+    font-family: RobotomMedium;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    image-orientation: inherit;
+    background-color: #0A1650ff; 
+    background-image: url(./../src/img/dots-img.webp);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: right center ;
+    gap: 3%;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.who_we_are div{ 
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 10%;
+    width: 40%;
+    height: 400px;
+    width: 400px;
+}
+
+.paragraphe{
+    display: flex;
+    
+    
+}
+
+
+.who_we_are img{
+
+    display: flex;
+
+
+
+    
+}
+
+.who_we_are h3{
+    display: flex;
+    font-size: 30px;
+    color: white;
+}
+.who_we_are p{
+
+    display: flex;
+    color: rgba(255, 255, 255, 0.682);
+    font-size: 80%;
+}
+.whowearelist{
+
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.682);
+    font-size: 80%;
+    list-style: none;
+}
+.whowearelist>li::before{
+    content: "●";
+    color: aqua;
+}
+
+.who_we_are h4{
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(90, 255, 255);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.paragraphe div{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 0%;
+}
+
+/* --------------Responsive------------- */
+
+@media (max-width:425px){
+    .image_who>img{
+        width: 250px;
+        height: 250px;
+    }
+    .paragraphe>div{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+}
+
+
