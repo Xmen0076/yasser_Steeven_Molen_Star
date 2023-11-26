@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
 
-
+@font-face{
+    font-family: RobotomMedium; src: url(./../src/fonts/RobotoMedium.ttf);
+}
 body{
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ body{
 }
 
 .partners{
+    font-family: RobotomMedium;
     display: flex;
     align-items: center;
     justify-content: center;
