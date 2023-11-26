@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
 
-
+@font-face{
+    font-family: RobotomMedium; src: url(./../src/fonts/RobotoMedium.ttf);
+}
 body{
     margin: 0;
     padding: 0;
@@ -168,3 +170,73 @@ header{
 }
 
 /* ----------------------Fin Header------------------- */
+
+.partners{
+    font-family: RobotomMedium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0A1650ff; 
+    
+}
+
+.partners h3{
+    color: white
+}
+
+.partners h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0AD3EFff;;
+}
+
+.logo_partners {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo_partners div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.128);
+    border-radius: 11px;
+    height: 90px;
+    width: 100px;
+    transition: 1s;
+    
+
+}
+
+
+
+.logo_partners img{
+
+    height: 50px;
+    width: 50px;
+    
+    
+    
+}
+
+
+.logo_partners div:hover{
+    background-color: #0AD3EFff;
+    
+   
+
+
+}
+
+img:hover{
+
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    transition: transform .8s;
+
+}
