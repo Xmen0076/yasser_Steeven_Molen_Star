@@ -938,6 +938,12 @@ padding-top: 20px;
     width: 400px;
     height: 400px;
 }
+.rotate2:hover{
+    transform: rotate(5deg) scale(1.1);
+}
+.rotate1:hover{
+    transform: rotate(-5deg) scale(1.1);
+}
 
 
 
@@ -1041,3 +1047,147 @@ button{
 }
 
 
+
+/* --------------------start of the footer--------------- */
+@font-face{
+    font-family: RobotomMedium; src: url(./../src/fonts/RobotoMedium.ttf);
+}
+footer{
+    width: 100%;
+    height: 550px;
+    font-family: RobotomMedium;
+    /* display: flex; */
+    padding-top: 50px;
+    flex-direction: column;
+    background-color: #122061;
+    background-image: url(./../src/img/overly-img.png);
+    background-size: cover;
+}
+.footercolumns{
+    width: 100%;
+    height: 90%;
+    color: #425196;
+    display: flex;
+    line-height: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column2>p{
+    font-size: x-large;
+    color: white;
+    font-weight: 400;
+}
+.column3>p:first-child{
+    font-size: x-large;
+    color: white;
+    font-weight: 400;
+}
+.column4>p{
+    font-size: x-large;
+    color: white;
+    font-weight: 400;
+}
+.column1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.column1>img{
+    width: 35%;
+    padding-bottom: 10px;
+}
+.column2{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.column2>li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.column2>li>a{
+    margin-bottom: 15px;
+    color: #425196;
+    text-decoration: none;
+}
+.column3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 18%;
+}
+.column4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+}
+.copyright{
+    width: 100%;
+}
+.copyright{
+    width: 100%;
+    height: 10%;
+    color: #425196;
+    display: flex;
+    justify-content: center;
+}
+input[type=radio]{
+    border: 2px aqua solid;
+    padding: 6px;
+    appearance: none;
+}
+.copyright{
+    border-top: 0.5px #425196 solid;
+}
+input[type=email]{
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    width: 70%;
+}
+input::placeholder{
+    color: #425196;
+}
+.email{
+    border: 2px solid #425196;
+}
+.email>img{
+    padding-right: 5px;
+}
+
+/* -------------------------End Footer-------------------- */
+
+/* ---------------------Start of the responsive--------------- */
+
+@media (max-width: 770px){
+    footer{
+        height: auto;
+    }
+    .footercolumns{
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    input[type=email]{
+        background-color: transparent;
+        padding: 5px;
+        border: none;
+        width: 70%;
+    }
+    .column4{
+        width: 30%;
+    }
+    .column1{
+        width: 50%;
+    }
+    .column2{
+        align-items: flex-start;
+        width: 50%;
+    }
+    .column3{
+        width: 50%;
+    }
+}
