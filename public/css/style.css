@@ -17,15 +17,13 @@ header{
     display: flex;
     padding-top: 30px;
     height: 700px;
-    background-image: url(./../src/img/banner-overlay-img.png);
+    background-image: url(./../src/img/banner-overlay-img.png),linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
     background-size: cover;
 }
 .headertopleft{
     width: 25%;
-    /* height: 20%; */
     display: flex;
     margin-bottom: 30px;
-    border: 3px black solid;
     justify-content: flex-end;
 }
 .headertopleft>img{
@@ -34,15 +32,15 @@ header{
 }
 .headertopright{
     width: 65%;
+    height: max-content;
     display: flex;
     height: 20%;
     justify-content: space-around;
 }
 .headertopright>ul{
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
     justify-content: center;
     gap: 60px;
 }
@@ -55,7 +53,7 @@ header{
 .headertopright>button{
     background-color: #49D0D3ff;
     color: white;
-    width: 22%;
+    width: 18%;
     height: 50px;
     margin-right: 50px;
     border-radius: 30px;
@@ -65,8 +63,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 20%;
-    border: 3px black solid;
+    height: 60px;
 }
 .headerbottomright>img{
     width: 250px;
@@ -87,14 +84,12 @@ header{
     display: flex;
     justify-content: center;
     flex-flow: column;
-    /* flex-wrap: wrap; */
 }
 .headerbottom{
     margin-top: 50px;
     display: flex;
     justify-content: center;
     width: 100%;
-    /* flex-wrap: wrap; */
 }
 .headerbottomleft>p:nth-child(1){
     color: white;
@@ -113,7 +108,7 @@ header{
     padding-top: 40px;
 }
 .get_started{
-    width: 35%;
+    width: 30%;
     height: 30px;
     background-color: #49D0D3ff;
     border: none;
@@ -121,12 +116,20 @@ header{
     color: white;
 }
 .contact_us{
-    width: 35%;
+    width: 30%;
     height: 30px;
     background-color: #2152A1ff;
     border-radius: 30px;
     border: none;
     color: white;
+}
+.contact_us:hover{
+    background-color: transparent;
+    border: 2px solid aqua;
+}
+.get_started:hover{
+    background-color: transparent;
+    border: 2px solid aqua;
 }
 
 /* ------------------------Responsive------------------ */
@@ -153,6 +156,12 @@ header{
     .headertopleft>img{
         width: 80px;
         height: 80px;
+    }
+    .headertopright>ul{
+        gap:10px
+    }
+    .headertopright>button{
+        width: 50%;
     }
 }
 
