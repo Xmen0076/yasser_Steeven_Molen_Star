@@ -6,17 +6,19 @@ body{
 
 /* ----------------------start of the statistics section------------------- */
 @font-face {
-    font-family: "OswalRegular";
-    src: url(./../assets/fonts/OswaldRegular.ttf);
+    font-family: RobotomMedium;
+    src: url(./../src/fonts/RobotoMedium.ttf);
 }
 .statistics{
+    font-family: RobotomMedium;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(./../src/img/banner-overlay-img.webp);
+    background-image: url(./../src/img/overly-img.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #122061;
 }
 .statisticsleft{
     width: 50%;
