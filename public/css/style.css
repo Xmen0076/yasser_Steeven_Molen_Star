@@ -10,74 +10,196 @@ body{
 
 
 .what_we_do{
-
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 500px;
     flex-direction: column;
+    justify-content: center;
+    background-color: #122061ff;
+    height: 100%;
+    background-image: url(/public/src/img/overly-img.png);
+    background-repeat: repeat;
+    background-size: 100vw;
 }
 
 
-.p_what_we_do{
+/* la classe logo general regroupe toute mes div ou ce trouve les icones + mon bouton */
 
+.logo_general{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: solid black;
-    background-color: ;
-}
-
-.img_what_we_do{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    gap: 40px;
-    border: solid black;
-}
+    width: 50%;
+    height: 300x;
+    gap: 15px;
 
-.img_camera{
     
+}
+
+@media screen and (max-width: 576px) {
+
+    .logo_general{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      
+
+    }
+    
+}
+
+.logo_general p{
+
+    display: flex;
+    font-size: 75%;
+    color: rgba(255, 255, 255, 0.505);
+    padding-left: 15px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.logo_general div{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+   
+
+}
+
+
+.logo_general img{
+width: 50px;
+height: 30px;
+padding-left: 15px;
+padding-top: 20px;
+   
+
+}
+
+.contain_div4 img{
+    width: 40px;
+    height: 30px;
+}
+
+.first_text{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 20%;
-    border: solid black;
+    margin: 0;
+    color: white;
+  
+}
+
+.first_text h6{
+    color: rgb(0, 217, 255);
+    margin: 0;
+    margin-top: 40px;
+}
+
+.first_text p{
+    color: rgb(0, 217, 255);
+}
+
+
+/* j'ai fais des classe pour chaque div, pour pouvoir faire un gap entre elle et d'autre modification*/
+
+.logo_general h5{
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+
+
+.contain_div1 {
+
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.032);
+    border-radius: 10px;
+
+
+
+}
+
+.contain_div2 {
+
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.032);
+    border-radius: 10px;
+
+}
+
+.contain_div3 {
+
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.032);
+    border-radius: 10px ;
     
 
 }
 
-.img_folder{
+.contain_div4 {
 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 20%;
-    border: solid black;
+    background-color: rgba(255, 255, 255, 0.032);
+    border-radius: 10px;
 }
 
-.img_end{
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 20%;
-    border: solid black;
+.logo_general img:hover{
+
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Safari 3-8 */
+    transform: scale(1.3);
+    transition: transform .8s;
+
 }
 
-.img_finger{
+.btn{
 
     display: flex;
+    margin-top: 50px;
+    margin-bottom: 60px;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 20%;
-    border: solid black;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: rgb(0, 213, 255);
+    color: white;
+    transition: 0.5s;
+}
 
+.btn:hover{
+
+    background-color: rgba(0, 213, 255, 0.149);
+
+
+}
+
+.contain_div1:hover {
+
+
+    border:  0.1px solid rgb(0, 208, 255);
+    
+}
+
+.contain_div2:hover {
+
+
+    border:  0.1px solid rgb(0, 208, 255);
+    
+  
+}
+
+.contain_div3:hover {
+
+    border:  0.1px solid rgb(0, 208, 255);
+}
+
+.contain_div4:hover{
+
+    border:  0.1px solid rgb(0, 208, 255);
 }
