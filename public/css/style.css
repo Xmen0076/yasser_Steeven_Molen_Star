@@ -8,3 +8,101 @@ body{
     width: 100%;
 }
 
+
+
+.section-get-in-touch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0A1650ff ;
+    background-image: url(/public/src/img/dots-img.webp);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position-y: 120px;
+    flex-wrap: wrap;
+}
+
+.text-get-in-touch{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    
+
+}
+
+.text-get-in-touch h6{
+    margin: 0;
+    margin-top: 50%;
+}
+
+.input1-name {
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.033);
+}
+.input2-mail{
+
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.033);
+
+
+}
+
+.input3-phone{
+
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.033);
+
+
+}
+
+.textarea{
+
+    border: none;
+    border-radius: 5px;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.033);
+
+
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border: none;
+    border: solid black;
+    
+    
+}
+
+button{
+    background-color: rgb(0, 183, 255);
+    border: none;
+    height: 30px;
+    width: 80px;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 40px;
+    transition: 0.5s;
+
+}
+
+button:hover{
+
+    background-color: rgba(240, 248, 255, 0.122);
+}
+
+
