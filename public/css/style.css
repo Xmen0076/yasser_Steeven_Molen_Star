@@ -9,7 +9,6 @@ body{
     padding: 0;
     width: 100%;
 }
-
 /* ------------------Debut Header---------------- */
 @font-face{
     font-family: RobotomMedium; src: url(./../src/fonts/RobotoMedium.ttf);
@@ -547,3 +546,169 @@ padding-top: 20px;
 
     border:  0.1px solid rgb(0, 208, 255);
 }
+
+/* ------------------Debut Cyber Security------------- */
+.cyber_security{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cyberleft{
+    padding-top: 55px;
+    padding-bottom: 31px;
+    height: max-content;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-size: cover;
+    padding-right: 40px;
+    align-items: flex-end;
+    background-image: url(./../src/img/banner-overlay-img.png),linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+}
+.cyberright{
+    width: 47%;
+}
+.imgcyberbg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 697px;
+    background-image: url(./../src/img/service-right-bg-img.png);
+    background-size: cover;
+    padding-left: 17px;
+}
+.cyberleft>p{
+    text-align: start;
+}
+.cyberpercent{
+    width: 60%;
+    display: flex;
+    align-items: flex-end;    
+}
+
+.cyberleft>p:nth-child(1){
+    color: #2CA9D4ff;
+    padding-right: 200px;   /* !!*/
+}
+.titlecyber{
+    color: white;
+    font-size: 50px;
+}
+.skills {
+    width: 65%;
+    display: flex ;
+    justify-content: space-between;
+    padding: 20px;
+}
+  
+.skill>:nth-child(1) {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    border-radius: 50%;
+    border: 4px #2CA9D4ff solid;
+}
+.circle{
+    /* font-size: 40px; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill>p{
+    color: white;
+    font-size: large;
+    
+}
+.textcybercenter{
+    color: #2CA9D4ff;
+    padding-right: 55px;
+}
+.textimgcyber{
+    background-color: #2CA9D4ff;
+    width: 40%;
+    height: max-content;
+    padding: 60px;
+    color: white;
+    padding-right: 0;
+    border-top-left-radius: 30px;
+}
+.textimgcyber>:nth-child(2){
+    font-size: x-large;
+}
+.textimgcyber>:nth-child(3){
+    font-size: large;
+}
+.textimgcyber>a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+
+/* -------------------Responsive---------------------- */
+@media (min-width:768px) and (max-width:1024px){
+    .cyberleft{ 
+        padding: 0px;
+        padding-left: 20px;
+        padding-top: 13px;
+    }
+    .skills{
+        width: 100%;
+        padding: 0px;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .textimgcyber{
+        width: 80%;
+    }
+}
+
+@media (min-width:425px) and (max-width:768px){
+    .cyberleft{
+        /* padding-left: 60px; */
+        width: 100%;
+    }
+    .textcybercenter{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .titlecyber{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .skills{
+        width: 100%;
+        padding-left: 0px;
+        justify-content: center;
+    }
+    .cyberright{
+        width: 100%;
+    }
+}
+@media (min-width:320px) and (max-width:425px){
+    .textimgcyber{
+        width: 100%;
+    }
+    .skills{
+        justify-content: flex-end;
+    }
+    .cyberleft{
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .cyberleft{
+        width: 100%;
+    }
+    .cyberright{
+        width: 100%;
+    }
+}
+/* ----------------End Cyber Section-------------- */
