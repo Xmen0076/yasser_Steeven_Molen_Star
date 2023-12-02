@@ -27,7 +27,7 @@ header{
     display: flex;
     height: 650px;
     font-family: RobotomRegular;
-    background-image: url(./../src/img/banner-overlay-img.png),linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    background-image: url(./../src/img/banner-overlay-img.png),linear-gradient(rgba(0,0,0,0.9),rgba(0, 0, 0, 0.9));
     background-size: cover;
     flex-direction: column;
 }
@@ -615,34 +615,35 @@ padding-top: 20px;
 /* ------------------Debut Cyber Security------------- */
 .cyber_security{
     width: 100%;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
+    font-family: RobotomMedium;
 }
 .cyberleft{
-    padding-top: 55px;
-    padding-bottom: 31px;
-    height: max-content;
     width: 50%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-size: cover;
-    padding-right: 40px;
     align-items: flex-end;
-    background-image: url(./../src/img/banner-overlay-img.png),linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    background-image: url(./../src/img/dots-img2.png);
+    background-repeat: no-repeat;
+    background-size: 30% 30%;
+    background-position-y: 240px;
+    background-color: #0A1650ff;
+}
+.containercyber{
+    width: 60%;
+    height: 80%;
+    margin-top: auto;
 }
 .cyberright{
-    width: 47%;
-}
-.imgcyberbg{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 100%;
-    height: 697px;
+    width: 50%;
+    height: 100%;
     background-image: url(./../src/img/service-right-bg-img.png);
-    background-size: cover;
-    padding-left: 17px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .cyberleft>p{
     text-align: start;
@@ -653,33 +654,43 @@ padding-top: 20px;
     align-items: flex-end;    
 }
 
-.cyberleft>p:nth-child(1){
-    color: #2CA9D4ff;
-    padding-right: 200px;   /* !!*/
+.containercyber>p:nth-child(1){
+    letter-spacing: 2px;
+    font-size: small;
+    color: #0AD3EFff;
 }
 .titlecyber{
+    font-size: x-large;
     color: white;
-    font-size: 50px;
+    line-height: 30px;
+    letter-spacing: 1.4px;
 }
 .skills {
     width: 65%;
     display: flex ;
-    justify-content: space-between;
-    padding: 20px;
+    gap: 25px;
+    /* flex-wrap: wrap; */ /*responsive*/
 }
   
 .skill>:nth-child(1) {
+    margin-top: 20px;
+    display: flex;
     justify-content: center;
     text-align: center;
     color: white;
-    width: 100px;
-    height: 100px;
-    font-size: 35px;
+    width: 70px;
+    height: 70px;
+    font-size: 15x;
     border-radius: 50%;
-    border: 4px #2CA9D4ff solid;
+    border: 3px #2CA9D4ff solid;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .circle{
-    /* font-size: 40px; */
+    font-size: large;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -687,12 +698,13 @@ padding-top: 20px;
 }
 .skill>p{
     color: white;
-    font-size: large;
-    
+    font-size: x-small;  
 }
 .textcybercenter{
-    color: #2CA9D4ff;
-    padding-right: 55px;
+    width: 95%;
+    line-height: 18px;
+    font-size: x-small;
+    color: #566AA1ff;
 }
 .textimgcyber{
     background-color: #2CA9D4ff;
@@ -717,8 +729,8 @@ padding-top: 20px;
 
 
 /* -------------------Responsive---------------------- */
-@media (min-width:768px) and (max-width:1024px){
-    .cyberleft{ 
+/* @media (min-width:768px) and (max-width:1024px){ */
+    /* .cyberleft{ 
         padding: 0px;
         padding-left: 20px;
         padding-top: 13px;
@@ -732,7 +744,7 @@ padding-top: 20px;
     .textimgcyber{
         width: 80%;
     }
-}
+} */
 
 @media (min-width:425px) and (max-width:768px){
     .cyberleft{
