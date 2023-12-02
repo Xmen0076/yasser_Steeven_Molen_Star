@@ -622,7 +622,7 @@ padding-top: 20px;
 }
 .cyberleft{
     width: 50%;
-    height: 100%;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -637,13 +637,6 @@ padding-top: 20px;
     width: 60%;
     height: 80%;
     margin-top: auto;
-}
-.cyberright{
-    width: 50%;
-    height: 100%;
-    background-image: url(./../src/img/service-right-bg-img.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 .cyberleft>p{
     text-align: start;
@@ -671,7 +664,7 @@ padding-top: 20px;
     gap: 25px;
     /* flex-wrap: wrap; */ /*responsive*/
 }
-  
+
 .skill>:nth-child(1) {
     margin-top: 20px;
     display: flex;
@@ -706,88 +699,78 @@ padding-top: 20px;
     font-size: x-small;
     color: #566AA1ff;
 }
+.cyberright{
+    width: 50%;
+    height: 600px;
+    background-image: url(./../src/img/service-right-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 .textimgcyber{
-    background-color: #2CA9D4ff;
-    width: 40%;
-    height: max-content;
-    padding: 60px;
+    background-color: #08D1F1ff;
+    width: 48%;
+    height: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     padding-right: 0;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 10px;
 }
-.textimgcyber>:nth-child(2){
-    font-size: x-large;
+.containerimgcyber{
+    width: 85%;
+    height: 70%;
 }
-.textimgcyber>:nth-child(3){
-    font-size: large;
+.textimgcyber img{
+    width: 55px;
+    height: 50px;
 }
-.textimgcyber>a{
+.textimgcyber p:nth-child(2){
+    font-size:small;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.textimgcyber p:nth-child(3){
+    font-size: x-small;
+    color: #B8FEFEff;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.containerimgcyber>a{
     text-decoration: none;
-    color: white;
-    font-size: large;
+    color:  #B8FEFEff;
+    font-size: small;
 }
 
 
 /* -------------------Responsive---------------------- */
-/* @media (min-width:768px) and (max-width:1024px){ */
-    /* .cyberleft{ 
-        padding: 0px;
-        padding-left: 20px;
-        padding-top: 13px;
+@media (min-width:768px) and (max-width:1023px){ 
+    .cyber_security{
+        margin-bottom: 600px;
     }
-    .skills{
+    .cyberleft{
+        width:100%;
+    }
+    .cyberright{
         width: 100%;
-        padding: 0px;
-        justify-content: flex-start;
-        gap: 10px;
     }
-    .textimgcyber{
-        width: 80%;
+}
+@media (min-width:375px) and (max-width:767px){ 
+    .cyber_security{
+        margin-bottom: 600px;
     }
-} */
+    .cyberleft{
+        width: 100%;
+    }
+    .cyberright{
+        width: 100%;
+        margin-bottom: 400px;
+    }
+}
 
-@media (min-width:425px) and (max-width:768px){
-    .cyberleft{
-        /* padding-left: 60px; */
-        width: 100%;
-    }
-    .textcybercenter{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .titlecyber{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .skills{
-        width: 100%;
-        padding-left: 0px;
-        justify-content: center;
-    }
-    .cyberright{
-        width: 100%;
-    }
-}
-@media (min-width:320px) and (max-width:425px){
-    .textimgcyber{
-        width: 100%;
-    }
-    .skills{
-        justify-content: flex-end;
-    }
-    .cyberleft{
-        padding-left: 20px;
-        padding-right: 0px;
-    }
-    .cyberleft{
-        width: 100%;
-    }
-    .cyberright{
-        width: 100%;
-    }
-}
 /* ----------------End Cyber Section-------------- */
 
 /* ----------------------start of the statistics section------------------- */
@@ -799,6 +782,7 @@ padding-top: 20px;
     font-family: RobotomMedium;
     display: flex;
     width: 100%;
+    height: 600px;
     flex-wrap: wrap;
     align-items: center;
     background-image: url(./../src/img/overly-img.png);
@@ -938,7 +922,7 @@ padding-top: 20px;
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    font-family: Myfont;
+    font-family: RobotomMedium;
     background-image: url(/public/src/img/dots2-img.png);
     background-size: 15%;
     background-position-x: left;
