@@ -279,12 +279,10 @@ header{
 }
 
 
-
 .logo_partners img{
 
     height: 50px;
     width: 50px;
-    
     
     
 }
@@ -293,7 +291,6 @@ header{
 .logo_partners div:hover{
     background-color: #0AD3EFff;
     
-   
 
 
 }
@@ -306,6 +303,53 @@ header{
     transition: transform .8s;
 
 }
+
+
+@media (min-width:1024px){
+
+    .logo_partners{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+        
+    }
+}
+
+
+
+/* responsiv partner en mobil */
+
+@media (max-width:767px){
+
+    .logo_partners{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 50%;
+        
+    }
+}
+
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width:1023){
+
+    .logo_partners{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 20%;
+        
+    }
+}
+
+
+
 
 
 /* ----------------------who are we------------------- */
@@ -439,19 +483,22 @@ header{
     width: 50%;
     height: 300x;
     gap: 15px;
+    border: solid;
 
     
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 768px) and (max-width:1023) {
 
     .logo_general{
 
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-      
+        width: 100%;
+    
 
     }
     
