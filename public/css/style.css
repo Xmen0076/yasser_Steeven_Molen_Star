@@ -228,6 +228,7 @@ header{
         margin-right: auto;
     }
     .buttonheader{
+        width: 90%;
         gap: 40px;
         padding-left: 20px;
     }
@@ -937,6 +938,7 @@ padding-top: 20px;
     .statistics{
         width: 100%;
         height: 1000px;
+        padding-left: 0px;
     }
     .statisticsdata{
         width: 100%;
@@ -964,6 +966,7 @@ padding-top: 20px;
     .statistics{
         width: 100%;
         height: 1100px;
+        padding-left: 0px;
     }
     .statisticsdata{
         width: 80%;
@@ -1370,7 +1373,6 @@ input[type=checkbox]{
     }
     .footercolumns{
         flex-direction: column;
-        padding-left: 30px;
     }
     input[type=email]{
         background-color: transparent;
@@ -1379,7 +1381,7 @@ input[type=checkbox]{
         width: 70%;
     }
     .column1{
-        width: 88%;
+        width: 100%;
         align-items: center;
         text-align: center;
         margin-bottom: 20px;
@@ -1389,18 +1391,20 @@ input[type=checkbox]{
     }
     .column2{
         align-items: center;
-        width:75%;
+        width:100%;
         text-align: center;
         margin-bottom: 20px;
+        padding-left: 0;
     }
     .column3{
         align-items: center;
-        width: 84%;
+        width: 100%;
         text-align: center;
         margin-bottom: 20px;
+        padding-left: 0;
     }
     .column4{
-        width: 85%;
+        width: 100%;
         align-items: center;
         text-align: center;
         margin-bottom: 20px;
