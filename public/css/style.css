@@ -1414,7 +1414,7 @@ input[type=checkbox] {
 }
 .the-checkbox .bluebox::after{
     left: 4px; 
-    bottom: 0px; 
+    bottom: 4px; 
     width: 4px; 
     height: 10px; 
     border: solid white; 
