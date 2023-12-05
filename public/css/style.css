@@ -1396,7 +1396,7 @@ input[type=checkbox] {
 .bluebox{
     position: absolute;
     top:18px;
-    left:0;
+    left:5px;
     height: 14px; 
     width: 14px; 
     border: 2px solid aqua;
@@ -1423,34 +1423,6 @@ input[type=checkbox] {
     -ms-transform: rotate(45deg); 
     transform: rotate(45deg); 
 }
-/* #checkbox{
-    margin-top: 10px;
-    font-size: small;
-}
-input[type=checkbox]{
-    display: none;
-    position: absolute;
-    opacity: 0;
-}
-.checkboxcustom{
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-    padding-left: 25px;
-    position: relative;
-}
-.checkboxcustom::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 8px;
-    width: 10px;
-    height: 10px;
-    border: 2px solid aqua;
-}
-.input-checkbox:checked + .checkboxcustom::before{
-    background-color: #000;
-} */
 
 /* -------------------------End Footer-------------------- */
 
